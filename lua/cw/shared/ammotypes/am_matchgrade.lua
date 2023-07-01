@@ -10,12 +10,8 @@ if CLIENT then
 	att.description = {}
 end
 
-function att:attachFunc()
-	self:unloadWeapon()
-end
+function att:attachFunc() end
 
-function att:detachFunc()
-	self:unloadWeapon()
-end
+function att:detachFunc() end
 
 CustomizableWeaponry:registerAttachment(att)

@@ -13,12 +13,10 @@ end
 
 function att:attachFunc()
 	self.Shots = 20
-	self:unloadWeapon()
 end
 
 function att:detachFunc()
 	self.Shots = self.Shots_Orig
-	self:unloadWeapon()
 end
 
 CustomizableWeaponry:registerAttachment(att)
